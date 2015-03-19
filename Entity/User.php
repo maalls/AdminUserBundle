@@ -1,6 +1,6 @@
 <?php
 
-namespace Maalls\UserBundle\Entity;
+namespace Maalls\AdminUserBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Maalls\UserBundle;
+namespace Maalls\AdminUserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class MaallsUserBundle extends Bundle
+class MaallsAdminUserBundle extends Bundle
 {
 
     public function getParent()

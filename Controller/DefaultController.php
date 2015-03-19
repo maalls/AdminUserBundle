@@ -1,6 +1,6 @@
 <?php
 
-namespace Maalls\UserBundle\Controller;
+namespace Maalls\UserAdminBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
