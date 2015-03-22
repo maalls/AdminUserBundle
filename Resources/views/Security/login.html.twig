@@ -22,10 +22,10 @@
         <div>
             <div>
 
-                <h1 class="logo-name">F$</h1>
+                <h1 class="logo-name">{{ 'security.login.logo' | trans }}</h1>
 
             </div>
-            <h3>Login to Financial$</h3>
+            <h3>{{ 'security.login.title' | trans }}</h3>
             
             <form class="m-t" role="form" action="{{ path("fos_user_security_check") }}" method="post">
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
