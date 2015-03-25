@@ -38,7 +38,7 @@
                 </div>
 
                 {% if error %}
-                    <p class="bg-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</p>
+                    <p class="bg-danger">{{ error|trans }}</p>
                 {% endif %}
                 <input type="submit" class="btn btn-primary block full-width m-b" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
 
@@ -53,6 +53,8 @@
             
         </div>
     </div>
+
+
 
     <!-- Mainly scripts -->
     <script src="/bundles/maallsadmin/js/jquery-2.1.1.js"></script>
