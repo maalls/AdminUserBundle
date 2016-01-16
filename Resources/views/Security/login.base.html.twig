@@ -14,6 +14,11 @@
     <link href="/bundles/maallsadmin/css/animate.css" rel="stylesheet">
     <link href="/bundles/maallsadmin/css/style.css" rel="stylesheet">
 
+    {% block head %}
+
+    {% endblock %}
+
+
 </head>
 
 <body class="gray-bg">
@@ -22,7 +27,9 @@
         <div>
             <div>
 
-                <h1 class="logo-name">{{ 'security.login.logo' | trans }}</h1>
+                {% block name %}
+                    <h1 class="logo-name">{{ 'security.login.logo' | trans }}</h1>
+                {% endblock %}
 
             </div>
 
@@ -36,10 +43,10 @@
                 <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="{{ 'security.login.username'|trans }}" id="username" name="_username" value="{{ last_username }}" required="required" />
+                    <input type="text" class="form-control" placeholder="{{ 'security.login.username'|trans }}" id="username" name="_username" value="{{ last_username }}"  />
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" placeholder="{{ 'security.login.password'|trans }}" id="password" name="_password" required="required" />
+                    <input type="password" class="form-control" placeholder="{{ 'security.login.password'|trans }}" id="password" name="_password"  />
                 </div>
 
                 {% if error %}
