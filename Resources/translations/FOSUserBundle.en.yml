@@ -18,6 +18,8 @@ security:
         password: "Password"
         remember_me: Remember me
         submit: Login
+        title: 'Log in'
+        logo: ''
 
 # Profile
 profile:
